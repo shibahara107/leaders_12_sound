@@ -15,24 +15,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-Qc-747">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
-                                <state key="normal" backgroundImage="drumImage.png"/>
-                                <connections>
-                                    <action selector="touchDownDrumButton" destination="BYZ-38-t0r" eventType="touchDown" id="pxj-Mo-BJ2"/>
-                                    <action selector="touchUpDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrc-d4-ZSF"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2j3-sx-Awn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-Qc-747">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                        <state key="normal" backgroundImage="drumImage.png"/>
+                                        <connections>
+                                            <action selector="touchDownDrumButton" destination="BYZ-38-t0r" eventType="touchDown" id="pxj-Mo-BJ2"/>
+                                            <action selector="touchUpDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrc-d4-ZSF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVy-Qy-N11">
+                                        <rect key="frame" x="0.0" y="284" width="414" height="284"/>
+                                        <state key="normal" backgroundImage="pianoImage"/>
+                                        <connections>
+                                            <action selector="touchDownPianoButton" destination="BYZ-38-t0r" eventType="touchDown" id="r3X-UV-Irz"/>
+                                            <action selector="touchUpPianoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="1z9-gu-txV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shf-bU-qnh">
+                                        <rect key="frame" x="0.0" y="568" width="414" height="284"/>
+                                        <state key="normal" backgroundImage="cymbalImage"/>
+                                        <connections>
+                                            <action selector="touchDownCymbalButton" destination="BYZ-38-t0r" eventType="touchDown" id="rLf-Sj-VzU"/>
+                                            <action selector="touchUpCymbalButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="val-jx-tEl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ip2-Qc-747" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QGu-19-w5A"/>
-                            <constraint firstItem="Ip2-Qc-747" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oNe-yJ-s44"/>
+                            <constraint firstItem="2j3-sx-Awn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5ns-4H-XPT"/>
+                            <constraint firstAttribute="bottom" secondItem="2j3-sx-Awn" secondAttribute="bottom" id="LwD-tq-psh"/>
+                            <constraint firstItem="2j3-sx-Awn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R6E-NM-CGr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2j3-sx-Awn" secondAttribute="trailing" id="zGc-Ck-dhC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cymbalButton" destination="shf-bU-qnh" id="pbc-3K-Bxt"/>
                         <outlet property="drumButton" destination="Ip2-Qc-747" id="g22-Io-MF7"/>
+                        <outlet property="pianoButton" destination="AVy-Qy-N11" id="37V-AD-ZHP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -41,6 +66,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cymbalImage" width="200" height="200"/>
         <image name="drumImage.png" width="200" height="200"/>
+        <image name="pianoImage" width="200" height="200"/>
     </resources>
 </document>
