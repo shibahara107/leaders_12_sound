@@ -15,11 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2j3-sx-Awn">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2j3-sx-Awn">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-Qc-747">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                        <rect key="frame" x="107" y="0.0" width="200" height="284"/>
                                         <state key="normal" backgroundImage="drumImage.png"/>
                                         <connections>
                                             <action selector="touchDownDrumButton" destination="BYZ-38-t0r" eventType="touchDown" id="pxj-Mo-BJ2"/>
@@ -27,7 +27,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVy-Qy-N11">
-                                        <rect key="frame" x="0.0" y="284" width="414" height="284"/>
+                                        <rect key="frame" x="107" y="284" width="200" height="284"/>
                                         <state key="normal" backgroundImage="pianoImage"/>
                                         <connections>
                                             <action selector="touchDownPianoButton" destination="BYZ-38-t0r" eventType="touchDown" id="r3X-UV-Irz"/>
@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shf-bU-qnh">
-                                        <rect key="frame" x="0.0" y="568" width="414" height="284"/>
+                                        <rect key="frame" x="107" y="568" width="200" height="284"/>
                                         <state key="normal" backgroundImage="cymbalImage"/>
                                         <connections>
                                             <action selector="touchDownCymbalButton" destination="BYZ-38-t0r" eventType="touchDown" id="rLf-Sj-VzU"/>
