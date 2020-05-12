@@ -20,7 +20,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-Qc-747">
                                         <rect key="frame" x="107" y="0.0" width="200" height="284"/>
-                                        <state key="normal" backgroundImage="drumImage.png"/>
+                                        <state key="normal" image="drumImage"/>
                                         <connections>
                                             <action selector="touchDownDrumButton" destination="BYZ-38-t0r" eventType="touchDown" id="pxj-Mo-BJ2"/>
                                             <action selector="touchUpDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrc-d4-ZSF"/>
@@ -28,7 +28,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVy-Qy-N11">
                                         <rect key="frame" x="107" y="284" width="200" height="284"/>
-                                        <state key="normal" backgroundImage="pianoImage"/>
+                                        <state key="normal" image="pianoImage"/>
                                         <connections>
                                             <action selector="touchDownPianoButton" destination="BYZ-38-t0r" eventType="touchDown" id="r3X-UV-Irz"/>
                                             <action selector="touchUpPianoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="1z9-gu-txV"/>
@@ -36,7 +36,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shf-bU-qnh">
                                         <rect key="frame" x="107" y="568" width="200" height="284"/>
-                                        <state key="normal" backgroundImage="cymbalImage"/>
+                                        <state key="normal" image="cymbalImage"/>
                                         <connections>
                                             <action selector="touchDownCymbalButton" destination="BYZ-38-t0r" eventType="touchDown" id="rLf-Sj-VzU"/>
                                             <action selector="touchUpCymbalButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="val-jx-tEl"/>
@@ -67,7 +67,7 @@
     </scenes>
     <resources>
         <image name="cymbalImage" width="200" height="200"/>
-        <image name="drumImage.png" width="200" height="200"/>
+        <image name="drumImage" width="200" height="200"/>
         <image name="pianoImage" width="200" height="200"/>
     </resources>
 </document>
